@@ -23,6 +23,10 @@ class List{
             head = nullptr;
             last = nullptr;
         }
+
+        ~List(){
+            clear();
+        }
         
         void pushBack(int data){
             if(head == nullptr){
@@ -129,6 +133,9 @@ class List{
             last->next = next_node.head;
             next_node.head->prev = last;
         }
+        
+        void find(){}
+        
 };
 
     

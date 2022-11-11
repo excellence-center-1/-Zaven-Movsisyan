@@ -23,10 +23,6 @@ class List{
             head = nullptr;
             last = nullptr;
         }
-
-        ~List(){
-            clear();
-        }
         
         void pushBack(int data){
             if(head == nullptr){
@@ -111,8 +107,6 @@ class List{
                 delete last;
                 last = current;
             }
-            head = nullptr;
-            last = nullptr;
         }
         
         int size(){
@@ -132,10 +126,19 @@ class List{
         void splice(List next_node){
             last->next = next_node.head;
             next_node.head->prev = last;
+            
         }
         
-        void find(){}
-        
+        void find(int d){
+            int count = 0;
+            current = head;
+            while(current->next != nullptr){
+                if (current->data == d){
+                    ++count;
+                    cout << "The " << count << "elemenet :" << d << endl; 
+                }
+            }
+        }
 };
 
     
@@ -149,7 +152,7 @@ int main(){
     first.pushFront(400);
     first.popBack();
     second.pushBack(600);
-    second.pushFront(700);
+    second.pushFront(789);
     second.pushBack(800);
     second.popFront();
     cout << "First list :\n";

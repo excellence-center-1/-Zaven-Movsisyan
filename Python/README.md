@@ -8,5 +8,5 @@ Python
 -------------------
 | 6-12-22 | Lists |
 -------------------------
-| 12-12-22 | Dictionaries |
+| 12-12-22 | Dictionaries | Sets | Tuples |
 -----------

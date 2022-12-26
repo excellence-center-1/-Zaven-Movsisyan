@@ -33,20 +33,33 @@ class Matrix:
 				return Matrix(self.row, self.col, l)
 		
 		def add(self, add_elem):
-				if 
-				print("New matrix is getting ready")
-				new_list = []
-				for i in self.values:
-						temp = []
-						for j in i:
-								temp.append(str(int(j) + add_elem))
-						new_list.append(temp)
-								
-				return  Matrix(self.row, self.col, new_list)
+				if type(add_elem) == int:
+						print("New matrix is getting ready")
+						new_list = []
+						for i in self.values:
+								temp = []
+								for j in i:
+										temp.append(str(int(j) + add_elem))
+								new_list.append(temp)
+						return Matrix(self.row, self.col, new_list)
+				elif type(add_elem) == list:
+						new_list = []
+						for i in range(len(self.row)):
+								temp = []
+								for j in range(self.col):
+										temp.append(str(int(add_elem[i][j]) + int(self.values[i][j])))
+								new_list.append(temp)
+								temp = []
+						return Matrix(self.row, self.col, new_list)
+
 
 a = Matrix(5, 5)
 a.show()
 b = a.get_transpose()
 b.show()
-c = b.add(5)
+c = b.add([[57,13,51,88,59],
+[40,58,36,62,18],
+[39,46,31,67,99],
+[49,62,62,92,52],
+[27,2,24,49,13]])
 c.show()

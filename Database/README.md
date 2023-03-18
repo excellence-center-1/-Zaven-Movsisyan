@@ -7,3 +7,5 @@ Hometasks below:
 ----------
 | 16-03-23 |  Make a third normalized table : Task 2 |
 --------------------
+| 17-03-23 | Make a normalized table for a shop : Task 3 |
+-----------------

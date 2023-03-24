@@ -9,3 +9,5 @@ Hometasks below:
 --------------------
 | 17-03-23 | Make a normalized table for a shop : Task 3 |
 -----------------
+| 22-03-23 | Create tables for a shop in postgresql: Task 4 |
+-------------

@@ -10,26 +10,35 @@ create table brand(
 
 insert into brand (name)
     values ('best_food'),
-            ('fresh_food')
+            ('fresh_food');
 
 
-create store(
+-- Creation of table 'store' with id name and address.
+create table store(
     id serial primary key,
     name varchar(50) unique not null,
     address varchar(50) unique not null
 );
 
-create current_prizes(
+insert into store (name, addres)
+    values ('Vitamin', 'Tigran Great'),
+            ('Proshyan', 'Bangladesh');
+
+
+-- Creation of table current_prizes with id, delivery prize, sale_prize and date.
+create table current_prizes(
     id int not null,
     sale = int not null,
-    delivery= int not null,
+    delivery = int not null,
     prize_date = date,
     foreign key (id)
        references product (id)
-)
+);
+
+insert into current_prizes (sale, delivery, )
 
 
--- Creation if table 'product'
+-- Creation of table 'product' with id, name, brand name, del.prize, sale prize.
 create table product(
     id serial primary key,
     name varchar(50) unique not null,
@@ -45,7 +54,8 @@ create table product(
 )
 
 
-create costumer(
+-- Creation of table costumer with id, name, address and budget.
+create table costumer(
     id serial primary key,
     name varchar(50) not null,
     address varchar(50) not null,
@@ -53,7 +63,8 @@ create costumer(
 )
 
 
-create order(
+-- Creation of table order with id, store_id, costumer_id, product_id.
+create table order(
     id serial primary key,
     store_id int,
     product_id int,

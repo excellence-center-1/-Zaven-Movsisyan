@@ -131,10 +131,23 @@ input[type=checkbox]:checked + header{
   }
 
 .button{
+    width: 20vh;
+    height: 5vh;
     background-color: #00ba00;
     color:white;
     border:none;
-    border-radius: 15px;
-    font-size: 5vh; 
+    border-radius: 10px;
+    font-size: 2vh; 
+}
 
+
+
+#cus:checked ~ #vis{
+
+    display: block;
+}
+#vis{
+    display: none;
+    background-color: white;
+    
 }

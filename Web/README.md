@@ -18,3 +18,6 @@ Js
 | 11-05-23 | Task 6 | Solve the given tasks of loops |
 ------
 | 12-05-23 | Task 7 | Solve the given tasks of functions |
+-------
+| 16-05-23 | Task 8 | Improve the Tic Tac Toe game |
+----

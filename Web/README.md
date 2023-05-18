@@ -21,3 +21,5 @@ Js
 -------
 | 16-05-23 | Task 8 | Improve the Tic Tac Toe game |
 ----
+| 18-05-23 | Task 9 | Solve the given tasks of OOP |
+-----
